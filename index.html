@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johda Community Welfare Organization | Empowering Lives</title>
+    
+    <!-- Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon: Use assets/images/favicon.ico -->
+    <link rel="icon" href="https://placehold.co/32x32/0284c7/white?text=JCWO" type="image/x-icon">
+
+    <style>
+        /* Custom styles can be added here */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Style for the mobile menu animation */
+        .menu-open {
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-closed {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- =========== Header =========== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- Logo: Use assets/images/logo.png -->
+                <img src="https://placehold.co/40x40/0284c7/white?text=JCWO"JCWO Logo" class="h-10 w-10">
+                <a href="index.html" class="text-2xl font-bold text-sky-700">Johda Community Welfare Organization</a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-sky-600 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-sky-600 font-medium">About Us</a>
+                <a href="projects.html" class="text-gray-600 hover:text-sky-600 font-medium">Our Work</a>
+                <a href="gallery.html" class="text-gray-600 hover:text-sky-600 font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-600 hover:text-sky-600 font-medium">Contact</a>
+            </div>
+            
+           
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white fixed top-0 left-0 w-full h-full menu-closed z-50">
+            <div class="flex justify-end p-6">
+                <button id="close-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center h-full space-y-8 -mt-16">
+                <a href="index.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Home</a>
+                <a href="about.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">About Us</a>
+                <a href="projects.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Our Work</a>
+                <a href="gallery.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Gallery</a>
+                <a href="contact.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========== Main Content =========== -->
+    <main>
+        <!-- Hero Section -->
+        <!-- Background Image: Use assets/images/hero-image.jpg -->
+        <section class="relative bg-cover bg-center h-[60vh] md:h-[80vh] text-white" style="background-image: url('./photos/start.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Empowering Lives, Building Futures</h1>
+                <p class="text-lg md:text-xl max-w-3xl mb-8">We are dedicated to uplifting communities by providing essential support and creating sustainable opportunities for those in need.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="projects.html" class="bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-700 transition duration-300">Our Projects</a>
+                    <a href="contact.html" class="bg-white text-sky-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-200 transition duration-300">Get Involved</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Summary -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Who We Are</h2>
+                <div class="w-24 h-1 bg-sky-600 mx-auto mb-8"></div>
+                <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+                    The Johad Community Welfare Organization is a non-profit committed to alleviating poverty and fostering self-reliance. Through targeted projects in water, food security, education, and business development, we aim to make a lasting impact on individuals and families.
+                </p>
+                <a href="about.html" class="mt-8 inline-block text-sky-600 font-semibold text-lg hover:underline">Learn More About Our Mission &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Our Work / Projects Section -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Key Projects</h2>
+                    <div class="w-24 h-1 bg-sky-600 mx-auto mb-6"></div>
+                    <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+                        We focus on impactful initiatives that provide immediate relief and long-term solutions.
+                    </p>
+                </div>
+                
+                <!-- Project Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Project Card 1: Food Item-->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <!-- Image: Use assets/images/projects/water-project-1.jpg -->
+                        <img src="./photos/foodItem.jpg" alt="Food Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Food Item</h3>
+                            <p class="text-gray-600 mb-4">We distribute essential food items to families in need, ensuring no one in our community goes hungry.</p>
+                            <a href="projects.html#food" class="font-semibold text-sky-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: Qurbaani -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <!-- Image: Use assets/images/projects/raashon-scheme-1.jpg -->
+                        <img src="./photos/qurbaani2.jpg" alt="Qurbaani" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Qurbaani</h3>
+                            <p class="text-gray-600 mb-4">We organize Qurbani programs to share meat with underprivileged families, spreading joy and blessings during Eid.</p>
+                            <a href="projects.html#qurbaani" class="font-semibold text-sky-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Student Scholarships -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <!-- Image: Use assets/images/projects/scholarship-student-1.jpg -->
+                        <img src="./photos/blanket5.jpg" alt="Blanket Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Blanket Distribution</h3>
+                            <p class="text-gray-600 mb-4">We distribute blankets to families in need, providing warmth and comfort during winters.</p>
+                            <a href="projects.html#scholarships" class="font-semibold text-sky-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4: Business Scheme -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <!-- Image: Use assets/images/projects/rikshaw-business-1.jpg -->
+                        <img src="./photos/business1.jpg" alt="Business Scheme" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Business Scheme</h3>
+                            <p class="text-gray-600 mb-4">Empowering individuals by helping them start small businesses like tuc shops or providing rickshaws.</p>
+                            <a href="projects.html#business" class="font-semibold text-sky-600 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action (Donate) -->
+        <section class="py-16 md:py-24 bg-slate-800 text-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Our Community</h2>
+                    <p class="max-w-2xl mb-8 text-lg">Your support can transform lives. Whether through donations, volunteering, or spreading the word, every action counts.</p>
+
+    </main>
+
+    <!-- =========== Footer =========== -->
+    <footer class="bg-slate-800 text-gray-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Organization Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <!-- Logo: Use assets/images/logo.png (a white version would be best here) -->
+                        <img src="https://placehold.co/40x40/ffffff/0f172a?text=JCWO" alt="JCWO Logo" class="h-10 w-10">
+                        <h3 class="text-2xl font-bold text-white">Johda Community</h3>
+                    </div>
+                    <p class="text-gray-400">A non-profit organization dedicated to empowering communities and building a brighter future for all.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-sky-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-sky-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-sky-400 transition-colors">Projects</a></li>
+                        <li><a href="gallery.html" class="hover:text-sky-400 transition-colors">Gallery</a></li>
+                       
+                        <li><a href="contact.html" class="hover:text-sky-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Our Work -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Our Work</h4>
+                    <ul class="space-y-2">
+                        <li><a href="projects.html#water" class="hover:text-sky-400 transition-colors">Food Items</a></li>
+                        <li><a href="projects.html#raashon" class="hover:text-sky-400 transition-colors">Qurbaani</a></li>
+                        <li><a href="projects.html#scholarships" class="hover:text-sky-400 transition-colors">Scholarships</a></li>
+                        <li><a href="projects.html#business" class="hover:text-sky-400 transition-colors">Business Schemes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <p class="mb-2">Kashmir General Store, Johad Rd, Islamabad, Pakistan</p>
+                    <p class="mb-2">
+                        <!-- Email Icon: assets/images/icons/email.svg -->
+                        <a href="mailto:jcwo887@gmail.com" class="hover:text-sky-400 transition-colors">jcwo887@gmail.com</a>
+                    </p>
+                    <p>
+                        <!-- Phone Icon: assets/images/icons/phone.svg -->
+                        <a href="tel:0332-6164616" class="hover:text-sky-400 transition-colors">0332-6164616</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Johad Community Welfare Organization. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =========== JavaScript =========== -->
+    <script>
+        // JavaScript for the mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-closed');
+            mobileMenu.classList.add('menu-open');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-open');
+            mobileMenu.classList.add('menu-closed');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+

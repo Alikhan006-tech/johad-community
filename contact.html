@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Johda Community Welfare Organization</title>
+    
+    <!-- Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon: Use assets/images/favicon.ico -->
+    <link rel="icon" href="https://placehold.co/32x32/0284c7/white?text=JCWO" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .menu-open {
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-closed {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- =========== Header =========== -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <!-- Logo: Use assets/images/logo.png -->
+                <img src="https://placehold.co/40x40/0284c7/white?text=JCWO" alt="JCWO Logo" class="h-10 w-10">
+                <a href="index.html" class="text-2xl font-bold text-sky-700">Johda Community Welfare Organization</a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-sky-600 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-sky-600 font-medium">About Us</a>
+                <a href="projects.html" class="text-gray-600 hover:text-sky-600 font-medium">Our Work</a>
+                <a href="gallery.html" class="text-gray-600 hover:text-sky-600 font-medium">Gallery</a>
+                <a href="contact.html" class="text-sky-600 font-bold">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white fixed top-0 left-0 w-full h-full menu-closed z-50">
+            <div class="flex justify-end p-6">
+                <button id="close-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center h-full space-y-8 -mt-16">
+                <a href="index.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Home</a>
+                <a href="about.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">About Us</a>
+                <a href="projects.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Our Work</a>
+                <a href="gallery.html" class="text-2xl font-medium text-gray-700 hover:text-sky-600">Gallery</a>
+                <a href="contact.html" class="text-2xl font-bold text-sky-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========== Main Content =========== -->
+    <main>
+        <!-- Page Header Section -->
+        <section class="relative bg-cover bg-center h-60" style="background-image: url('./photos/contact1.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative container mx-auto px-6 h-full flex flex-col items-center justify-center text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold">Contact Us</h1>
+                <p class="text-lg md:text-xl mt-2">We'd love to hear from you. Reach out with any questions or inquiries.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form and Details Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- Contact Information -->
+                    <div class="lg:col-span-1 bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+                        
+                        <div class="flex items-start space-x-4 mb-6">
+                            <svg class="w-6 h-6 text-sky-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <h3 class="text-lg font-semibold">Our Office</h3>
+                                <p class="text-gray-600">Kashmir General Store, <br>Johad Rd Islamabad, 44000, <br>Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 mb-6">
+                            <svg class="w-6 h-6 text-sky-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <h3 class="text-lg font-semibold">Email Us</h3>
+                                <a href="mailto:jcwo887@gmail.com" class="text-sky-600 hover:underline">jcwo887@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                           <svg class="w-6 h-6 text-sky-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <h3 class="text-lg font-semibold">Call Us</h3>
+                                <a href="tel:03326164616" class="text-gray-600 hover:text-sky-600">03326164616</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-2 bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+                        <form action="https://formspree.io/f/xeolyjve" method="POST">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                                <input type="text" name="subject" id="subject" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500">
+                            </div>
+                            <div class="mt-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea name="message" id="message" rows="5" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-sky-500 focus:border-sky-500"></textarea>
+                            </div>
+                            <div class="mt-6 text-right">
+                                <button type="submit" class="bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section>
+             <!-- How to embed a Google Map:
+             1. Go to Google Maps and search for your location.
+             2. Click "Share" and then "Embed a map".
+             3. Copy the HTML (it will be an iframe) and paste it here, replacing the existing iframe.
+             -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2684.6925667493138!2d72.91670270000002!3d33.677898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbd6acac97c25%3A0x535b62bfd64969a7!2sKashmir%20General%20Store!5e1!3m2!1sen!2s!4v1758211650671!5m2!1sen!2s"
+             width="600"
+             height="450" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- =========== Footer =========== -->
+    <footer class="bg-slate-800 text-gray-300">
+        <div class="container mx-auto px-6 py-12">
+             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Organization Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <!-- Logo: Use assets/images/logo-white.png -->
+                        <img src="https://placehold.co/40x40/ffffff/0f172a?text=JCWO" alt="JCWO Logo" class="h-10 w-10">
+                        <h3 class="text-2xl font-bold text-white">Johda Community</h3>
+                    </div>
+                    <p class="text-gray-400">A non-profit organization dedicated to empowering communities and building a brighter future for all.</p>
+                </div>
+                <!-- Quick Links, Our Work, Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-sky-400 transition-colors">About Us</a></li>
+                        <li><a href="projects.html" class="hover:text-sky-400 transition-colors">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-sky-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Our Work</h4>
+                    <ul class="space-y-2">
+                        <li><a href="projects.html#water" class="hover:text-sky-400 transition-colors">Food Items</a></li>
+                        <li><a href="projects.html#raashon" class="hover:text-sky-400 transition-colors">Qurbaani</a></li>
+                        <li><a href="projects.html#blankets" class="hover:text-sky-400 transition-colors">Blanket Distribution</a></li>
+                        <li><a href="projects.html#business" class="hover:text-sky-400 transition-colors">Business Schemes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <p class="mb-2">Kashmir General Store, Johad Rd, Islamabad, Pakistan</p>
+                    <p class="mb-2"><a href="mailto:jcwo887@gmail.com" class="hover:text-sky-400 transition-colors">jcwo887@gmail.com</a></p>
+                    <p><a href="tel:03326164616" class="hover:text-sky-400 transition-colors">03326164616</a></p>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Johad Community Welfare Organization. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========== JavaScript =========== -->
+    <script>
+        // --- Mobile Menu ---
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-closed');
+            mobileMenu.classList.add('menu-open');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('menu-open');
+            mobileMenu.classList.add('menu-closed');
+        });
+
+        // --- Footer Year ---
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
